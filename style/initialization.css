@@ -1,0 +1,17 @@
+@font-face {
+    font-family:"Inter";
+    src:url(../font/Inter-VariableFont_opsz,wght.ttf);
+}
+@font-face {
+    font-family:"NotoSerifSC";
+    src:url(../font/NotoSerifSC-VariableFont_wght.ttf);
+}
+body {
+    margin:0;
+    font-family:Inter,NotoSerifSC,cursive,serif,sans-serif;
+}
+footer {
+    text-align: center;
+    font-size: 10px;
+    color: grey;
+}

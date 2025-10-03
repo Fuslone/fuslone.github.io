@@ -1,0 +1,28 @@
+nav ul {
+    margin: 0;
+    display: flex;
+    padding: 12px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    li {
+        display: flex;
+        height: 32px;
+        margin: 0 20px;
+        list-style: none;
+        align-items: center;
+        a {
+            color: black;
+            line-height: 1;
+            font-size: 16px;
+            display: inline-block;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+.space {
+    flex: 1;
+}
