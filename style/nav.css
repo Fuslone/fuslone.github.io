@@ -3,12 +3,14 @@ nav ul {
     display: flex;
     padding: 12px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
     li {
         display: flex;
         height: 32px;
         margin: 0 20px;
         list-style: none;
         align-items: center;
+
         a {
             color: black;
             line-height: 1;
@@ -17,12 +19,35 @@ nav ul {
             text-decoration: none;
             vertical-align: middle;
         }
+
         img {
             width: 32px;
             height: 32px;
         }
     }
 }
-.space {
+
+.space-1 {
     flex: 1;
+}
+
+.space-2 {
+    flex: 10;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    transition: border-color 0.3s ease-in-out;
+
+    input {
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none;
+            border-color: black;
+        }
+    }
 }
