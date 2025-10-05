@@ -1,0 +1,23 @@
+.link {
+    margin: 20px 16%;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    div p{
+        margin: 0 20px;
+    }
+    div h4{
+        margin: 8px 20px;
+    }
+    img {
+        height: 64px;
+        width: 64px;
+    }
+    a {
+        position:absolute;
+        top: 26px;
+        left: calc(100% - 52px);
+    }
+}

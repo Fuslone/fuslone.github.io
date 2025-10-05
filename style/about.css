@@ -4,9 +4,8 @@ h1 {
 }
 
 article {
-    margin: 0 200px;
+    margin: 0 16%;
     padding: 20px 50px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
