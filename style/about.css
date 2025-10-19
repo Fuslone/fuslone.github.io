@@ -1,11 +1,11 @@
 h1 {
-    text-align: center;
     margin: 20px 0;
+    text-align: center;
 }
 
 article {
-    margin: 0 16%;
+    margin: 20px 16%;
     padding: 20px 50px;
-    border: 1px solid black;
     border-radius: 20px;
+    border: 1px solid black;
 }
