@@ -5,8 +5,8 @@ nav ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     li {
-        display: flex;
         height: 32px;
+        display: flex;
         margin: 0 20px;
         list-style: none;
         align-items: center;
@@ -42,13 +42,14 @@ nav ul {
 
     input {
         height: 18px;
-        border-radius: 4px;
+        padding: 5px 3px;
+        border-radius: 5px;
         border: 1px solid #ddd;
         transition: all 0.3s ease-in-out;
 
         &:focus {
             outline: none;
-            border-width: 1.5px;
+            border-width: 1.8px;
             border-color: black;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }

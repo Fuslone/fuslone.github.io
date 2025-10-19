@@ -2,3 +2,29 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
+
+.search {
+    width: 100%;
+
+    form {
+        width: 45%;
+        margin: auto;
+
+        input {
+            width: 100%;
+            height: 30%;
+            padding: 5px 6px;
+            border-radius: 6px;
+            border: 1.8px solid #ddd;
+            transition: all 0.3s ease-in-out;
+
+            &:focus {
+                outline: none;
+                border-width: 2px;
+                border-color: cornflowerblue;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+}
