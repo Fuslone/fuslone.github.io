@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style/initialization.css">
         <link rel="stylesheet" href="style/nav.css">
         <link rel="stylesheet" href="style/main.css">
+        <script src="script/search.js" defer></script>
     </head>
     <body>
         <nav>
@@ -22,7 +23,7 @@
                 <li class="space-2"></li>
                 <li>
                     <form class="search-input" action="index.html" method="get">
-                        <input type="search" placeholder="搜索" required>
+                        <input type="search" name="search" placeholder="搜索" required disabled>
                     </form>
                 </li>
                 <li><a href="about/index.html">关于</a></li>
@@ -38,7 +39,8 @@
             <h1>Fuslone 的个人网站</h1>
             <div class="search">
                 <form action="index.html" method="get">
-                    <input type="search" placeholder="搜索" required>
+                    <input type="search" name="search" placeholder="搜索" required>
+                    <input type="hidden" name="type" value="all">
                 </form>
             </div>
         </main>

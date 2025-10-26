@@ -1,0 +1,52 @@
+{
+    "document": {},
+    "link": {
+        "GitHub": {
+            "title": "GitHub - 全球领先的代码托管平台",
+            "description": "Build and ship software on a single, collaborative platform.",
+            "url": "link/index.html#GitHub"
+        },
+        "Cloudflare": {
+            "title": "Cloudflare - 让全球连通云为您服务",
+            "description": "Connect, protect, and build everywhere.",
+            "url": "link/index.html#Cloudflare"
+        },
+        "DigitalPlat": {
+            "title": "DigitalPlat - 赢回互联网的自主权",
+            "description": "Break free from centralization—DigitalPlat empowers you with open technology, free domains, and decentralized tools to build a freer, more accessible internet for everyone.",
+            "url": "link/index.html#DigitalPlat"
+        },
+        "Massgrave": {
+            "title": "Massgrave - Microsoft 激活脚本",
+            "description": "Open-source Windows and Office activator",
+            "url": "link/index.html#Massgrave"
+        },
+        "VirusTotal": {
+            "title": "VirusTotal - 在线病毒分析工具",
+            "description": "Analyse suspicious files, domains, IPs and URLs to detect malware and other breaches.",
+            "url": "link/index.html#VirusTotal"
+        },
+        "Kali": {
+            "title": "Kali Linux - 最先进的渗透测试发行版",
+            "description": "Penetration Testing and Ethical Hacking Linux Distribution.",
+            "url": "link/index.html#Kali"
+        },
+        "MirrorZ": {
+            "title": "MirrorZ - 校园网联合镜像站",
+            "description": "A final site for Mirror sites.",
+            "url": "link/index.html#MirrorZ"
+        },
+        "MDN": {
+            "title": "MDN Web Docs - 前端开发权威文档",
+            "description": "Resources for Developers,by Developers.",
+            "url": "link/index.html#MDN"
+        },
+        "Flaticon": {
+            "title": "Flaticon - 免费下载矢量图标和贴纸",
+            "description": "Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS.",
+            "url": "link/index.html#Flaticon"
+        }
+    },
+    "project": {},
+    "software": {}
+}
