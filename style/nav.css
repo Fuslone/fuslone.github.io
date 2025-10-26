@@ -41,8 +41,8 @@ nav ul {
     transition: border-color 0.3s ease-in-out;
 
     input {
-        height: 18px;
-        padding: 5px 3px;
+        height: 20px;
+        padding: 0 5px;
         border-radius: 5px;
         border: 1px solid #ddd;
         transition: all 0.3s ease-in-out;
