@@ -24,11 +24,8 @@ fetch('search.json')
     }
     return response.json();
 }).then(data=>{
-    if (type==='all'){
-        search(data.document,input);
-        search(data.link,input);
-        search(data.project,input);
-        search(data.software,input);
+    if (type===null){
+        search(data,input);
     }else{
         search(data[`${type}`],input);
     }
