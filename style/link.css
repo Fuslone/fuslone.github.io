@@ -1,22 +1,18 @@
 body>div {
+    height: 100vh;
     display: flex;
 
     aside {
-        flex-grow: 1;
         padding: 10px;
+        overflow: auto;
         border-right: 1px solid black;
-
-        h4 {
-            margin: 0;
-            padding: 5px;
-            font-size: 30px;
-        }
 
         ul {
             margin: 5px;
             padding: 5px;
             font-size: 16px;
             list-style: none;
+
         }
 
         a {
@@ -26,11 +22,8 @@ body>div {
     }
 
     main {
-        flex-grow: 2;
-
-        h1 {
-            margin: 15px 8%;
-        }
+        flex: 1;
+        overflow: auto;
 
         h2 {
             margin: 20px 12%;
@@ -46,6 +39,12 @@ body>div {
     align-items: center;
     border-radius: 20px;
     border: 1px solid black;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
     div p {
         margin: 0 20px;
@@ -64,5 +63,10 @@ body>div {
         top: 26px;
         position: absolute;
         left: calc(100% - 52px);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateX(2px);
+        }
     }
 }

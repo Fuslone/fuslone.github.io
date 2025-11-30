@@ -3,7 +3,7 @@
     "link": {
         "GitHub": {
             "title": "GitHub - 全球领先的代码托管平台",
-            "description": "Build and ship software on a single, collaborative platform.",
+            "description": "The future of building happens together.",
             "url": "link/index.html#GitHub"
         },
         "Cloudflare": {
@@ -47,6 +47,5 @@
             "url": "link/index.html#Flaticon"
         }
     },
-    "project": {},
-    "software": {}
+    "resource": {}
 }
