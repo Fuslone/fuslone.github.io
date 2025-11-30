@@ -20,11 +20,22 @@ nav ul {
             vertical-align: middle;
         }
 
+        &:not(:nth-child(2)):not(:nth-last-child(2)) a {
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
         img {
             width: 32px;
             height: 32px;
         }
     }
+
+
 }
 
 .space-1 {
