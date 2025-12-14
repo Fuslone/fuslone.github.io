@@ -202,6 +202,17 @@ function renderResults(results) {
     const resultsList = document.createElement('div');
     resultsList.className = 'results-list';
     
+    // 格式化日期函数
+    function formatDate(timestamp) {
+        if (!timestamp) return '未知';
+        const date = new Date(timestamp);
+        return date.toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+        });
+    }
+    
     // 渲染每个搜索结果
     results.forEach(item => {
         const resultItem = document.createElement('a');
@@ -218,8 +229,27 @@ function renderResults(results) {
         const truncatedDesc = truncateText(item.description);
         resultDesc.innerHTML = highlightMatch(truncatedDesc, searchInput);
         
+        // 创建日期信息容器
+        const resultMeta = document.createElement('div');
+        resultMeta.className = 'result-meta';
+        
+        // 创建日期信息
+        const resultCreated = document.createElement('span');
+        resultCreated.className = 'result-created';
+        resultCreated.textContent = `创建时间: ${formatDate(item.created)}`;
+        
+        const resultModified = document.createElement('span');
+        resultModified.className = 'result-modified';
+        resultModified.textContent = `修改时间: ${formatDate(item.modified)}`;
+        
+        // 组装日期信息
+        resultMeta.appendChild(resultCreated);
+        resultMeta.appendChild(resultModified);
+        
+        // 组装搜索结果内容
         resultContent.appendChild(resultTitle);
         resultContent.appendChild(resultDesc);
+        resultContent.appendChild(resultMeta);
         resultItem.appendChild(resultContent);
         
         resultsList.appendChild(resultItem);
