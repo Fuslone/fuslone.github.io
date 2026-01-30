@@ -21,11 +21,32 @@ nav ul {
         }
 
         &:not(:nth-child(2)):not(:nth-last-child(2)) a {
-            transform: translateY(0);
-            transition: transform 0.3s ease-in-out;
+            position: relative;
 
-            &:hover {
-                transform: translateY(-3px);
+            &::before,
+            &::after {
+                width: 0;
+                left: 50%;
+                content: '';
+                height: 2px;
+                position: absolute;
+                border-radius: 1px;
+                background-color: blue;
+                transition: all 0.5s ease-in-out;
+            }
+
+            &::before {
+                bottom: -3px;
+            }
+
+            &::after {
+                top: -3px;
+            }
+
+            &:hover::before,
+            &:hover::after {
+                left: 0;
+                width: 100%;
             }
         }
 
