@@ -17,4 +17,8 @@ footer {
     padding: 10px 0;
     text-align: center;
     border-top: 1px solid black;
+
+    img {
+        height: 20px;
+    }
 }
