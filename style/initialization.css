@@ -8,9 +8,14 @@
     src: url(../font/NotoSerifSC-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: "NotoSerifJP";
+    src: url(../font/NotoSerifJP-VariableFont_wght.ttf);
+}
+
 body {
     margin: 0;
-    font-family: Inter, NotoSerifSC, cursive, serif, sans-serif;
+    font-family: Inter, NotoSerifSC, NotoSerifJP, cursive, serif, sans-serif;
 }
 
 footer {
