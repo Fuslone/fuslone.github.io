@@ -35,7 +35,7 @@ body>div {
             }
             
             li a {
-                transition: all 0.3s ease;
+                transition: all 0.25s ease;
 
                 &:hover {
                     color: red;

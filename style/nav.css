@@ -3,6 +3,7 @@ nav ul {
     display: flex;
     padding: 12px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s ease;
 
     li {
         height: 32px;
@@ -67,6 +68,18 @@ nav ul {
     flex: 10;
 }
 
+.menu {
+    top: 3px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    display: none;
+    position: absolute;
+    background: none;
+}
+
 .search-input {
     display: flex;
     align-items: center;
@@ -84,6 +97,26 @@ nav ul {
             border-width: 1.8px;
             border-color: black;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media (width < 865px) {
+    .menu {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+
+        li:not(:nth-child(2)):not(:nth-child(7)):not(:nth-last-child(2)) {
+            display: none;
+
+            a,
+            form {
+                margin: auto;
+                text-align: center;
+            }
         }
     }
 }
