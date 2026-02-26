@@ -33,7 +33,7 @@ body>div {
                     color: blue;
                 }
             }
-            
+
             li a {
                 transition: all 0.25s ease;
 
@@ -42,8 +42,6 @@ body>div {
                 }
             }
         }
-
-        
     }
 
     main {
