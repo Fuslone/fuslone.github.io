@@ -1,7 +1,7 @@
 // 搜索配置
 const searchConfig = {
     // 搜索类型
-    knownTypes: ['all', 'software', 'tools', 'document', 'link'],
+    knownTypes: ['all', 'tools', 'document', 'link'],
     // 防抖延迟时间（毫秒）
     debounceDelay: 300,
     // 相似度阈值
@@ -292,7 +292,6 @@ function renderResults(results) {
     const filterContainer = createElement('div', 'filter');
     const filterSelect = createElement('select', '', `
         <option value="all">全部</option>
-        <option value="software">软件</option>
         <option value="tools">工具</option>
         <option value="document">文档</option>
         <option value="link">链接</option>
