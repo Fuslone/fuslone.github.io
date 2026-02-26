@@ -32,7 +32,7 @@ nav ul {
                 position: absolute;
                 border-radius: 1px;
                 background-color: blue;
-                transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease;
             }
 
             &::before {
@@ -78,8 +78,6 @@ nav ul {
 .menu {
     top: 3px;
     left: calc(50% - 25px);
-    width: 50px;
-    height: 50px;
     padding: 0;
     border: none;
     display: none;
@@ -90,19 +88,24 @@ nav ul {
 .search-input {
     display: flex;
     align-items: center;
-    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 
+    svg {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+    }
+    
     input {
         height: 20px;
-        padding: 0 5px;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-        transition: all 0.3s ease-in-out;
+        padding: 0 5px 0 5px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        transition: all 0.3s ease;
 
         &:focus {
             outline: none;
-            border-width: 1.8px;
-            border-color: black;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
     }
