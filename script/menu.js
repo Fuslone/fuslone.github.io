@@ -19,14 +19,18 @@ menu.addEventListener('click', () => {
         ul.style.boxShadow = 'none';
         ul.style.flexDirection = 'column';
         li.forEach(item => {
-            if (item.classList.contains("space-1") || item.classList.contains("space-2")){
+            if (item.classList.contains("space-1") || item.classList.contains("space-2")) {
                 item.style.display = 'none';
             } else {
-                item.style.display = 'flex';
-                item.style.margin = 'auto';
-                let link = item.querySelector('a');
-                if (link) {
-                    link.style.margin = 'auto';
+                if (!item.classList.contains("divider")) {
+                    item.style.display = 'flex';
+                    item.style.margin = 'auto';
+                    let link = item.querySelector('a');
+                    if (link) {
+                        link.style.margin = 'auto';
+                    }
+                } else {
+                    item.style.display = 'block';
                 }
             }
         });
@@ -52,7 +56,7 @@ menu.addEventListener('click', () => {
                 link.style.margin = '';
             }
         });
-        menu.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1" viewBox="0 0 264.58 264.58"> <rect x="-6.7529e-6" y="-6.7529e-6" width="264.58" height="264.58" fill="#ffffff" style="paint-order:stroke markers fill"/> <g transform="matrix(1.0417 0 0 1.0417 -74.965 -255.21)" stroke-width=".96"> <rect x="135.47" y="319.09" width="21.167" height="21.167" rx="1.27" ry="1.27" fill="#0573e1" stroke-width="5.842" style="paint-order:fill markers stroke"/> <path d="m169.86 329.67h92.604" fill="#4d4d4d" stroke="#4d4d4d" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="7.62"/> <rect x="135.47" y="403.75" width="21.167" height="21.167" rx="1.27" ry="1.27" fill="#0573e1" stroke-width="5.842" style="paint-order:fill markers stroke"/> <path d="m169.86 414.34h92.604" fill="#4d4d4d" stroke="#4d4d4d" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="7.62"/> <rect x="135.47" y="361.42" width="21.167" height="21.167" rx="1.27" ry="1.27" fill="#0573e1" stroke-width="5.842" style="paint-order:fill markers stroke"/> <path d="m169.86 372h92.604" fill="#4d4d4d" stroke="#4d4d4d" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="7.62"/> </g> </svg>';
+        menu.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1" viewBox="0 0 264.58 264.58"> <rect width="264.58" height="264.58" fill="#ffffff" style="paint-order:stroke markers fill"/> <rect x="72.76" y="83.344" width="119.06" height="97.896" rx="7.9375" ry="7.9375" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-miterlimit="4" stroke-width="7.9375" style="paint-order:fill markers stroke"/> <g transform="translate(1.7529e-6 2.6458)" fill="#4d4d4d" stroke="#0573e1" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="7.9375"> <path d="m101.86 108.48h60.854" fill-opacity=".015686"/> <path d="m101.86 129.65h60.854"/> <path d="m101.86 150.81h60.854"/> </g> </svg>';
     }
     isMenuOpen = !isMenuOpen;
 });
