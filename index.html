@@ -39,6 +39,7 @@
         </nav>
         <main>
             <h1>Fuslone の 个人网站</h1>
+            <p class="hitokoto"></p>
             <div class="search"></div>
         </main>
         <footer>
@@ -55,6 +56,13 @@
                     showSubResults: true
                 });
             });
+            fetch('https://v1.hitokoto.cn/?encode=json&c=i')
+                .then(res => {
+                    return res.json();
+                })
+                .then(data => {
+                    document.querySelector('.hitokoto').innerText = '「 ' + data.hitokoto + ' 」 —— 《' + data.from + '》';
+                })
         </script>
     </body>
 </html>

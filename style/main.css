@@ -3,6 +3,12 @@ h1 {
     margin: 20px 0;
 }
 
+.hitokoto {
+    font-size: 20px;
+    margin: 15px auto;
+    text-align: center;
+}
+
 .search {
     width: 50%;
     margin: auto;
