@@ -3,9 +3,29 @@ h1 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
+div {
+    display: flex;
+}
+
 article {
-    margin: 20px 16%;
-    padding: 20px 50px;
-    border-radius: 20px;
+    flex: 1;
+    margin: 20px;
+    padding: 0 1em;
+    border-radius: 1em;
     border: 1px solid black;
+    p {
+        margin: 5px;
+    }
+}
+
+
+
+@media (width < 865px) {
+    div {
+        flex-direction: column;
+    }
 }
