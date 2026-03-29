@@ -19,7 +19,7 @@ menu.addEventListener('click', () => {
         ul.style.boxShadow = 'none';
         ul.style.flexDirection = 'column';
         li.forEach(item => {
-            if (item.classList.contains("space-1") || item.classList.contains("space-2")) {
+            if (item.classList.contains("space")) {
                 item.style.display = 'none';
             } else {
                 if (!item.classList.contains("divider")) {

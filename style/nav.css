@@ -12,6 +12,7 @@ nav ul {
         align-items: center;
 
         a {
+            margin: auto;
             color: black;
             line-height: 1;
             font-size: 20px;
@@ -20,7 +21,7 @@ nav ul {
             vertical-align: middle;
         }
 
-        &:not(.divider):not(.space-2) {
+        &:not(.divider) {
             flex: 1;
         }
 
@@ -59,13 +60,6 @@ nav ul {
             height: 32px;
         }
     }
-
-
-}
-
-.space-2 {
-    flex: 10;
-    display: none;
 }
 
 .divider {
@@ -117,14 +111,10 @@ nav ul {
         display: block;
     }
 
-    .space-2 {
-        display: flex;
-    }
-
     nav ul {
         display: flex;
 
-        li:not(:nth-child(2)):not(.space-2):not(:nth-last-child(2)) {
+        li:not(:nth-child(2)):not(:nth-last-child(2)) {
             display: none;
 
             a,
