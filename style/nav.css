@@ -14,10 +14,14 @@ nav ul {
         a {
             color: black;
             line-height: 1;
-            font-size: 16px;
+            font-size: 20px;
             display: inline-block;
             text-decoration: none;
             vertical-align: middle;
+        }
+
+        &:not(.divider):not(.space-2) {
+            flex: 1;
         }
 
         &:not(:nth-child(2)):not(:nth-last-child(2)) a {
@@ -59,12 +63,9 @@ nav ul {
 
 }
 
-.space-1 {
-    flex: 1;
-}
-
 .space-2 {
     flex: 10;
+    display: none;
 }
 
 .divider {
@@ -96,7 +97,7 @@ nav ul {
         height: 20px;
         border-radius: 5px 0 0 5px;
     }
-    
+
     input {
         height: 20px;
         padding: 0 5px 0 5px;
@@ -114,6 +115,10 @@ nav ul {
 @media (width < 865px) {
     .menu {
         display: block;
+    }
+
+    .space-2 {
+        display: flex;
     }
 
     nav ul {
