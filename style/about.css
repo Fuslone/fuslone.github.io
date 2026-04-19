@@ -17,15 +17,19 @@ article {
     padding: 0 1em;
     border-radius: 1em;
     border: 1px solid black;
+
     p {
-        margin: 5px;
+        margin: 10px;
     }
 }
 
-
-
-@media (width < 865px) {
+@media (width < 1048px) {
     div {
         flex-direction: column;
+
+        article {
+            margin: 20px auto;
+            width: min(500px, 75vw);
+        }
     }
 }

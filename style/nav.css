@@ -3,6 +3,7 @@ nav ul {
     display: flex;
     padding: 12px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 
     li {
         height: 32px;
@@ -106,7 +107,7 @@ nav ul {
     }
 }
 
-@media (width < 865px) {
+@media (width < 835px) {
     .menu {
         display: block;
     }

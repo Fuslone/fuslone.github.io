@@ -10,7 +10,7 @@ h1 {
 }
 
 .search {
-    width: 50%;
+    width: min(500px, 75vw);
     margin: auto;
 }
 
