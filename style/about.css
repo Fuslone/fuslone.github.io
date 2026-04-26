@@ -28,8 +28,8 @@ article {
         flex-direction: column;
 
         article {
-            margin: 20px auto;
             width: min(500px, 75vw);
+            margin: 20px auto;
         }
     }
 }

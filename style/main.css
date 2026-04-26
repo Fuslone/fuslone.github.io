@@ -1,17 +1,17 @@
 h1 {
-    text-align: center;
     margin: 20px 0;
+    text-align: center;
 }
 
 .hitokoto {
-    font-size: 20px;
     margin: 20px auto;
     text-align: center;
+    font-size: 20px;
 }
 
 .search {
-    width: min(500px, 75vw);
     margin: auto;
+    width: min(500px, 75vw);
 }
 
 .pagefind-ui__result-thumb {
