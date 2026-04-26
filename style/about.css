@@ -23,12 +23,12 @@ article {
     }
 }
 
-@media (width < 1048px) {
+@media (width < 1050px) {
     div {
         flex-direction: column;
 
         article {
-            width: min(500px, 75vw);
+            width: min(516px, 75vw);
             margin: 20px auto;
         }
     }
