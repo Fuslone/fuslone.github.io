@@ -12,8 +12,8 @@ h1 {
 .search {
     margin: auto;
     width: min(500px, 75vw);
-}
 
-.pagefind-ui__result-thumb {
-    display: none;
+    pagefind-summary {
+        margin: 5px 0;
+    }
 }

@@ -9,10 +9,10 @@
         <link rel="icon" href="image/logo.png">
         <link rel="stylesheet" href="style/initialization.css">
         <link rel="stylesheet" href="style/nav.css">
-        <link rel="stylesheet" href="pagefind/pagefind-ui.css">
+        <link rel="stylesheet" href="pagefind/pagefind-component-ui.css">
         <link rel="stylesheet" href="style/main.css">
         <script src="script/changeNav.js" defer data-cfasync="false"></script>
-        <script src="pagefind/pagefind-ui.js" defer data-cfasync="false"></script>
+        <script src="pagefind/pagefind-component-ui.js" type="module" defer data-cfasync="false"></script>
     </head>
     <body>
         <nav>
@@ -44,15 +44,13 @@
         <main>
             <h1>Fuslone の 个人网站</h1>
             <p class="hitokoto"></p>
-            <div class="search"></div>
+            <div class="search">
+                <pagefind-input></pagefind-input>
+                <pagefind-summary></pagefind-summary>
+                <pagefind-results></pagefind-results>
+            </div>
         </main>
         <script data-cfasync="false">
-            window.addEventListener('DOMContentLoaded',(e) => {
-                new PagefindUI({
-                    element: ".search",
-                    showSubResults: true
-                });
-            });
             fetch('https://v1.hitokoto.cn/?encode=json&c=i')
                 .then(res => {
                     return res.json();
