@@ -27,7 +27,13 @@ nav ul {
         }
 
         &:not(:nth-child(2)):not(:nth-last-child(2)) a {
+            color: rgb(75, 75, 75);
             position: relative;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: black;
+            }
 
             &::before,
             &::after {
@@ -38,7 +44,7 @@ nav ul {
                 left: 50%;
                 border-radius: 1px;
                 background-color: blue;
-                transition: all 0.5s ease-in-out;
+                transition: all 0.3s ease-in-out;
             }
 
             &::before {
@@ -110,10 +116,15 @@ nav button {
         li:not(:nth-child(2)):not(:nth-last-child(2)) {
             display: none;
 
-            a,
-            form {
+            a {
+                color: black;
                 margin: auto;
                 text-align: center;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
             }
         }
     }
