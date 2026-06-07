@@ -99,7 +99,7 @@ nav button {
     flex-direction: column;
 }
 
-@media (width < 835px) {
+@media (width < 740px) {
     nav button {
         display: block;
     }
